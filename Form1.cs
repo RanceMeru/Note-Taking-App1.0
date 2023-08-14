@@ -15,11 +15,13 @@ namespace Note_Taking_App
         public Form1()
         {
             InitializeComponent();
+            MainTextBox.AutoSize = true;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             //change
+           
         }
     }
 }
