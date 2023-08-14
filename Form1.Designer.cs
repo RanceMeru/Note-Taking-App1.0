@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.MainTextBox = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // MainTextBox
@@ -44,12 +45,23 @@
             this.MainTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.MainTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Location = new System.Drawing.Point(466, 67);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(212, 26);
+            this.textBox1.TabIndex = 1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 447);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.MainTextBox);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -61,6 +73,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox MainTextBox;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
